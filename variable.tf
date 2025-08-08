@@ -1,8 +1,6 @@
 variable "aws_instance_type" {
     type = string
-    validation {
-      condition = var.aws_instance_type=="t2.micro" || var.aws.instance_type=="t3.micro"
-      error_message = "t2 and t3.micro values allowed"
+    default = t2.micro
     } 
 }
 

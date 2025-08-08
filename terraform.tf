@@ -13,11 +13,10 @@ terraform {
 
 terraform {
   backend "s3" {
-    bucket = var.aws_s3_bucket.my_bucket.bucket
+    bucket = "demo-bucket ${random_id.rand_id.hex}"
     key    = "./terraform.tfstate"
     region = "ap-south-1"
     encrypt = true
-    use_lockfile = true
   }
 }
 
