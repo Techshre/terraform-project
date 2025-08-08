@@ -23,14 +23,6 @@ resource "aws_s3_bucket_public_access_block" "public_access" {
   restrict_public_buckets = false
 }
 
-resource "aws_s3_bucket_policy" "my_policy" {
-  bucket = aws_s3_bucket.my_bucket.id
-  policy = jsondecode(
-
-  )
-
-}
-
 resource "aws_s3_bucket_website_configuration" "example" {
   bucket = aws_s3_bucket.my_bucket.id
 
