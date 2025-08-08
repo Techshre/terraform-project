@@ -1,4 +1,4 @@
 resource "random_id" "rand_id" {
-    byte_length = 8
-  
+  byte_length = 8
+
 }

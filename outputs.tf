@@ -1,12 +1,12 @@
 output "public_ip" {
-    value = aws_instance.my_instance.public_ip
+  value = aws_instance.my_instance.public_ip
 }
 
 output "s3_public_dns" {
-    value = aws_instance.my_instance.id
-  
+  value = aws_instance.my_instance.id
+
 }
 output "public-dns" {
-    value = aws_instance.my_instance.public_dns
-  
+  value = aws_instance.my_instance.public_dns
+
 }
