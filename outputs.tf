@@ -6,3 +6,7 @@ output "s3_public_dns" {
     value = aws_instance.my_instance.id
   
 }
+output "public-dns" {
+    value = aws_instance.my_instance.public_dns
+  
+}
