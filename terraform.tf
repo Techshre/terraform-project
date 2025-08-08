@@ -11,12 +11,5 @@ terraform {
   }
 }
 
-terraform {
-  backend "s3" {
-    bucket = "demo-bucket ${random_id.rand_id.hex}"
-    key    = "./terraform.tfstate"
-    region = "ap-south-1"
-    encrypt = true
-  }
-}
+
 
